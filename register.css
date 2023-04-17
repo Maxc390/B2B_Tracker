@@ -1,0 +1,105 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color:#383636;
+    background-image:url("./risen-wang-20jX9b35r_M-unsplash.jpg");
+    /* background: linear-gradient(#CB3DF2, #8372F2, #6A86D9, #59B5D9, #5FD9D9); */
+  }
+  .container{
+    max-width: 600px;
+    width: 80%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    
+  }
+
+  
+  .container .title{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .content form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+  }
+  form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 47%;
+  }
+  form .input-box span.details{
+    display:block;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid rgba(30, 145, 221, 0.925);
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+  }
+  .user-details .input-box input:focus,
+  .user-details .input-box input:valid{
+    border-color: #CB3DF2;
+  }
+   form .custom-select{
+    font-size: 16px;
+    font-weight: 500;
+   }
+   form .custom-select select{
+    width: 30%;
+    height: 30px;  
+    border-radius: 10px;
+    border: 1px solid rgba(30, 145, 221, 0.925);
+    border-bottom-width: 2px;
+   }
+   form .custom-select select:focus,
+   form .custom-select select:valid{
+     border-color: #CB3DF2;
+   }
+   form .button{
+     height: 45px;
+     margin: 35px 0;
+   }
+   form .button input{
+     height: 100%;
+     width: 100%;
+     border-radius: 5px;
+     border: none;
+     color: #fff;
+     font-size: 18px;
+     font-weight: 500;
+     letter-spacing: 1px;
+     cursor: pointer;
+     transition: all 0.15s ease;
+     background: linear-gradient(#CB3DF2, #8372F2, #6A86D9, #59B5D9, #5FD9D9); 
+    }
+   form .button input:hover{
+    background: linear-gradient(#b135d3, #6954f3, #4e70d6, #3faeda, #5FD9D9);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+  }
+  .login_link{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #383636;
+  }
+  .login_link a{
+    color: #f11772;
+    text-decoration: none;
+  }
+  .login_link a:hover{
+    text-decoration: underline;
+  }

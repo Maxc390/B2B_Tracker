@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+  font-family: 'Open Sans', sans-serif;
+  background-color: grey;
+}
+
+input,
+label,
+button {
+  margin: 2px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 7px;
+}
+
+#email,
+#phone_number,
+#password,
+#confirm_password {
+  display: block;
+}
+#last_name,
+#first_name {
+  display: inline-block;
+}
+.container {
+  margin: auto;
+  border: 1px;
+  border-style: solid;
+  border-radius: 7px;
+  display: flex;
+  padding: 3px;
+  justify-content: center;
+  align-items: center;
+}
+.error {color: #FF0000;}

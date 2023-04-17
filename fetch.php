@@ -1,8 +1,22 @@
+<?php
+// Connect to the MySQL database and retrieve data
+$conn = mysqli_connect("localhost:3307","root", "", "modeldb");
+$result = $conn->query(" SELECT  SUM(Amount) AS total_revenue FROM details");
+
+// Organize the data into arrays
+
+$data2 = array();
+
+while ($row = $result->fetch_assoc()) {
+    $data2[] = $row['total_revenue'];
+
+}?>
+
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Chart.js Example</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Chart.js Graph</title>
+    <link rel="stylesheet" type="text/css" href="analytics.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
@@ -69,8 +83,8 @@
       });
     </script>
    
-  <div> 
-    <h2> Partitions </h2></div>
+  <div class="fetch"> 
+    <h2> Total Sales:KSH<?php echo $data2[0]?> </h2></div>
     </div>
 </body>
 </html>
